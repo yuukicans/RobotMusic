@@ -49,18 +49,18 @@ async def speedtest_function(_, message):
     m = await message.reply_text("**» ʀᴜɴɴɪɴɢ sᴩᴇᴇᴅᴛᴇsᴛ...**")
     loop = asyncio.get_event_loop()
     result = await loop.run_in_executor(None, testspeed, m)
-    output = f"""✯ **sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs** ✯
+    output = f"""✯ sᴩᴇᴇᴅᴛᴇsᴛ ʀᴇsᴜʟᴛs ✯
     
 <u>**❥͜͡ᴄʟɪᴇɴᴛ :**</u>
-**» __ɪsᴩ :__** {result['client']['isp']}
-**» __ᴄᴏᴜɴᴛʀʏ :__** {result['client']['country']}
+**» ɪsᴩ :** {result['client']['isp']}
+**» ᴄᴏᴜɴᴛʀʏ :** {result['client']['country']}
   
 <u>**❥͜͡sᴇʀᴠᴇʀ :**</u>
-**» __ɴᴀᴍᴇ :__** {result['server']['name']}
-**» __ᴄᴏᴜɴᴛʀʏ :__** {result['server']['country']}, {result['server']['cc']}
-**» __sᴩᴏɴsᴏʀ :__** {result['server']['sponsor']}
-**» __ʟᴀᴛᴇɴᴄʏ :__** {result['server']['latency']}  
-**» __ᴩɪɴɢ :__** {result['ping']}"""
+**» ɴᴀᴍᴇ :** {result['server']['name']}
+**» ᴄᴏᴜɴᴛʀʏ :** {result['server']['country']}, {result['server']['cc']}
+**» sᴩᴏɴsᴏʀ :** {result['server']['sponsor']}
+**» ʟᴀᴛᴇɴᴄʏ :** {result['server']['latency']}  
+**» ᴩɪɴɢ :** {result['ping']}"""
     msg = await app.send_photo(
         chat_id=message.chat.id, photo=result["share"], caption=output
     )

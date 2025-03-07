@@ -38,7 +38,7 @@ async def song(_, message: Message):
         await message.delete()
     except:
         pass
-    m = await message.reply_text("🔎")
+    m = await message.reply_text("🎰")
 
     query = "".join(" " + str(i) for i in message.command[1:])
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
@@ -58,13 +58,13 @@ async def song(_, message: Message):
             f"ғᴀɪʟᴇᴅ ᴛᴏ ғᴇᴛᴄʜ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴛ-ᴅʟ.\n\n**ʀᴇᴀsᴏɴ :** `{ex}`"
         )
 
-    await m.edit_text("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢ,\n\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
+    await m.edit_text("» ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ʟᴀɢᴜ,\n\nᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"☁️ **ᴛɪᴛʟᴇ :** [{title[:23]}]({link})\n⏱️ **ᴅᴜʀᴀᴛɪᴏɴ :** `{duration}`\n🥀 **ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ :** {BOT_MENTION}"
+        rep = f" **ᴊᴜᴅᴜʟ :** [{title[:23]}]({link})\n⏱ **ᴅᴜʀᴀsɪ :** `{duration}`\n **ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ :** {BOT_MENTION}"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -98,19 +98,19 @@ async def song(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴄʟɪᴄᴋ ʜᴇʀᴇ",
+                            text="ᴄʟɪᴄᴋ ᴅɪsɪɴɪ",
                             url=f"https://t.me/{BOT_USERNAME}?start",
                         )
                     ]
                 ]
             )
             return await m.edit_text(
-                text="ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴀɴᴅ sᴛᴀʀᴛ ᴍᴇ ғᴏʀ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ sᴏɴɢs.",
+                text="ᴋʟɪᴋ ʙᴜᴛᴛᴏɴ ᴅᴀɴ sᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴅᴏᴡɴʟᴏᴀᴅ ᴀᴜᴅɪᴏ.",
                 reply_markup=start_butt,
             )
         await m.delete()
     except:
-        return await m.edit_text("ғᴀɪʟᴇᴅ ᴛᴏ ᴜᴘʟᴏᴀᴅ ᴀᴜᴅɪᴏ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀs.")
+        return await m.edit_text("ɢᴀɢᴀʟ ᴜᴘʟᴏᴀᴅ ᴀᴜᴅɪᴀ ᴋᴇ ᴛᴇʟᴇɢʀᴀᴍ sᴇʀᴠᴇʀ.")
 
     try:
         os.remove(audio_file)

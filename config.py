@@ -19,7 +19,7 @@ START_IMG = getenv("START_IMG", "https://files.catbox.moe/0qe835.jpg")
 SESSION = getenv("SESSION", None)
 
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/YuukiMusicSupport")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/AboutYuuki")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tentangyuuki")
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "422998061").split()))
 

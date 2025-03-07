@@ -75,7 +75,7 @@ gp_buttons = [
         InlineKeyboardButton(
             text=" ᴅᴏɴᴀsɪ ", url="https://t.me/Yuukican"
         ),
-        InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴩᴇʀ ", user_id=config.OWNER_ID),
+        InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴩᴇʀ ", url=f"123456789"),
     ],
 ]
 

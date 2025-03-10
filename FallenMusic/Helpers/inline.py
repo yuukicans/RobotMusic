@@ -48,12 +48,12 @@ pm_buttons = [
     ],
     [InlineKeyboardButton(text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="fallen_help")],
     [
-        InlineKeyboardButton(text=" ᴄʜᴀɴɴᴇʟ ", url=f"https://t.me/TentangYuuki"),
+        InlineKeyboardButton(text=" ᴄʜᴀɴɴᴇʟ ", url=f"https://t.me/ownersexual"),
         InlineKeyboardButton(text=" sᴜᴩᴩᴏʀᴛ ", url=config.SUPPORT_CHAT),
     ],
     [
         InlineKeyboardButton(
-            text=" ᴅᴏɴᴀsɪ ", url="https://t.me/Yuukican"
+            text=" ᴅᴏɴᴀsɪ ", url="https://t.me/ucalmevin"
         ),
         InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴩᴇʀ ", url=f" 123456789"),
     ],
@@ -73,7 +73,7 @@ gp_buttons = [
     ],
     [
         InlineKeyboardButton(
-            text=" ᴅᴏɴᴀsɪ ", url="https://t.me/Yuukican"
+            text=" ᴅᴏɴᴀsɪ ", url="https://t.me/ucalmevin"
         ),
         InlineKeyboardButton(text=" ᴅᴇᴠᴇʟᴏᴩᴇʀ ", url=f"123456789"),
     ],

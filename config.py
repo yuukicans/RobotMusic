@@ -18,10 +18,10 @@ START_IMG = getenv("START_IMG", "https://files.catbox.moe/0qe835.jpg")
 
 SESSION = getenv("SESSION", None)
 
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/YuukiMusicSupport")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tentangyuuki")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/inforobotcalcin")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ownersexual")
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "422998061").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5510539512").split()))
 
 
 FAILED = "https://files.catbox.moe/0qe835.jpg"

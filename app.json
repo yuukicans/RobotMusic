@@ -28,7 +28,7 @@
       },
       "OWNER_ID": {
         "description": "Fill your user id here. (Must be integer)",
-        "value": "422998061",
+        "value": "5510539512",
         "required": true
       },
       "SESSION": {
@@ -38,12 +38,12 @@
       },
       "SUDO_USERS": {
         "description": "The user id(s) of user(s) whom you would like to add as a sudo. Multiple values shall be seperated with a space.",
-        "value": "",
+        "value": "5510539512",
         "required": true
       },
       "SUPPORT_CHAT": {
         "description": "Link of your telegram support group. (Must pe public)",
-        "value": "https://t.me/YuukiMusicSupport",
+        "value": "https://t.me/inforobotcalvin",
         "required": false
       }
     },
